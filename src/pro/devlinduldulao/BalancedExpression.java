@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
-public class Expression {
+public class BalancedExpression {
     private final List<Character> leftBrackets = Arrays.asList('(', '{', '[', '<');
     private final List<Character> rightBrackets = Arrays.asList(')', '}', ']', '>');
 
