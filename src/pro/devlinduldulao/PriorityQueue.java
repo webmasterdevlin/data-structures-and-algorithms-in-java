@@ -9,7 +9,10 @@ public class PriorityQueue {
     public void add(int item) {
         if (isFull())
             throw new IllegalStateException();
-
+        /*
+         * [1, 3, 4, #]   (2)
+         * [1, 2, 3, 4]   (full)
+         */
         int i = shiftItemsToInsert(item);
         items[i] = item;
         count++;
@@ -36,6 +39,9 @@ public class PriorityQueue {
     }
 
     private int shiftItemsToInsert(int item) {
+        //1st cycle    5               4
+        //2nd cycle    4               3
+        //and so on..
         int i;
         for (i = count - 1; i >= 0; i--) {
             if (items[i] > item)

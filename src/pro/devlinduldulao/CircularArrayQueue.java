@@ -14,13 +14,13 @@ public class CircularArrayQueue {
 
     /*
      * [10,  20,  30,  40,  #]   delete the 1st two
-     *  head                tail
+     *  front               rear
      *
      * [#,  #,  30,  40,  #]     add 50 at the end
-     *          head      tail
+     *          front     rear
      *
      * [#,  #,  30,  40,  50]    then move the tail
-     *  tail    head
+     *  rear    front
      * */
 
     void enqueue(int item) {
