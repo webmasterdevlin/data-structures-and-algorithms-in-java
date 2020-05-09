@@ -1,4 +1,4 @@
-package pro.devlinduldulao;
+package pro.devlinduldulao.LinearStructures.HashTables;
 
 import java.util.LinkedList;
 

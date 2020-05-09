@@ -1,13 +1,17 @@
 package pro.devlinduldulao;
 
+import pro.devlinduldulao.NonLinearStructures.Tries.Trie;
+
 public class Main {
 
     public static void main(String[] args) {
-        Array array = new Array(5);
-        array.insert(10);
-        array.insert(20);
-        array.insert(30);
-        array.removeAt(0);
-        array.print();
+        var trie = new Trie();
+        trie.insert("car");
+        trie.insert("card");
+        trie.insert("care");
+        trie.insert("careful");
+        trie.insert("egg");
+        var words = trie.findWords(null);
+        System.out.println(words);
     }
 }

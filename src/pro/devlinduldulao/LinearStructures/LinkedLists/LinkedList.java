@@ -1,4 +1,4 @@
-package pro.devlinduldulao;
+package pro.devlinduldulao.LinearStructures.LinkedLists;
 
 import java.util.NoSuchElementException;
 
@@ -79,7 +79,7 @@ class LinkedList {
     int getKthFromTheEnd(int k) {
         if (isEmpty())
             throw new IllegalArgumentException();
-        
+
         var a = first;
         var b = first;
         for (var i = 0; i < k - 1; i++) {

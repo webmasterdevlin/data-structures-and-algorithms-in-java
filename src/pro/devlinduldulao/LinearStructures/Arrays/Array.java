@@ -1,4 +1,4 @@
-package pro.devlinduldulao;
+package pro.devlinduldulao.LinearStructures.Arrays;
 
 class Array {
     private int[] items;

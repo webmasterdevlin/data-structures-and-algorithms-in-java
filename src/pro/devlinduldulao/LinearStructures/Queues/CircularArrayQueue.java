@@ -1,4 +1,4 @@
-package pro.devlinduldulao;
+package pro.devlinduldulao.LinearStructures.Queues;
 
 import java.util.Arrays;
 
