@@ -141,7 +141,6 @@ public class Tree {
 
     private boolean isLeaf(Node node) {
         return node.leftChild == null && node.rightChild == null;
-
     }
 
     public boolean equals(Tree other) {

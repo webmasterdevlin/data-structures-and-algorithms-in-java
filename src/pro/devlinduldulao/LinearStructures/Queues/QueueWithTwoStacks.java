@@ -36,8 +36,7 @@ public class QueueWithTwoStacks {
                 fakeQueue.push(stack.pop());
         }
     }
-
-
+    
     public boolean isEmpty() {
         return (stack.isEmpty() && fakeQueue.isEmpty());
     }

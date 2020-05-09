@@ -1,5 +1,7 @@
 package pro.devlinduldulao.NonLinearStructures.Tries;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -117,6 +119,18 @@ public class Trie {
         return words;
     }
 
+    private Node findLastNodeOf(@NotNull String prefix) {
+
+        var current = root;
+        for (var ch : prefix.toCharArray()) {
+            var child = current.getChild(ch);
+            if (child == null)
+                return null;
+            current = child;
+        }
+        return current;
+    }
+
     private void findWords(Node root, String prefix, List<String> words) {
         if (root == null)
             return;
@@ -128,17 +142,4 @@ public class Trie {
             findWords(child, prefix + child.value, words);
     }
 
-    private Node findLastNodeOf(String prefix) {
-        if (prefix == null)
-            return null;
-
-        var current = root;
-        for (var ch : prefix.toCharArray()) {
-            var child = current.getChild(ch);
-            if (child == null)
-                return null;
-            current = child;
-        }
-        return current;
-    }
 }
